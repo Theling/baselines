@@ -2,10 +2,10 @@ import os
 import time
 import numpy as np
 import os.path as osp
-from baselines import logger
+from baselines.ppo2 import logger
 from collections import deque
-from baselines.common import explained_variance, set_global_seeds
-from baselines.common.policies import build_policy
+from baselines.ppo2.common import explained_variance, set_global_seeds
+from baselines.ppo2.common.policies import build_policy
 try:
     from mpi4py import MPI
 except ImportError:
